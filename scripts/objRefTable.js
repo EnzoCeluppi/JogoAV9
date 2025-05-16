@@ -9,7 +9,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Acts.SetVar,
-		C3.Plugins.Text.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.System.Cnds.EveryTick,
@@ -18,7 +17,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.System.Cnds.Compare,
-		C3.Plugins.Text.Acts.SetVisible
+		C3.Plugins.Text.Acts.SetVisible,
+		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.Sprite.Acts.SetCollisions
 	];
 };
 self.C3_JsPropNameTable = [
@@ -33,6 +34,8 @@ self.C3_JsPropNameTable = [
 	{Alcapao: 0},
 	{Ganhar: 0},
 	{Texto2: 0},
+	{desafio: 0},
+	{Morte2: 0},
 	{Pontos: 0}
 ];
 
@@ -44,5 +47,7 @@ self.InstanceType = {
 	Texto: class extends self.ITextInstance {},
 	Alcapao: class extends self.ISpriteInstance {},
 	Ganhar: class extends self.ISpriteInstance {},
-	Texto2: class extends self.ITextInstance {}
+	Texto2: class extends self.ITextInstance {},
+	desafio: class extends self.ISpriteInstance {},
+	Morte2: class extends self.ISpriteInstance {}
 }
