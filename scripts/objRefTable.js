@@ -8,7 +8,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Text.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Acts.AddVar,
@@ -16,6 +16,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.Scroll,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
+		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Text.Acts.SetVisible
 	];
